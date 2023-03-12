@@ -1,1 +1,90 @@
+# separator styles and colors
+full_text=|
+align=center
+color=#F79153
+separator=false
+separator_block_width=1
+# font=1
 
+###############################
+[separator]
+[name]
+
+command=echo "⚔️ Yassa's Arch"; i3-msg exec python3 /home/yassa/.scripts/bible/main.py
+interval=600
+###############################
+
+[separator]
+[fact]
+command=echo " 💡 "; i3-msg exec python3 /home/yassa/.scripts/statusbar/fact.py
+interval=3600
+
+[separator]
+[weather]
+command=echo " ⚽ "; i3-msg exec python3 /home/yassa/.scripts/statusbar/kooora.py
+interval=once
+
+[separator]
+[kooora]
+command=echo " ☀️ "; i3-msg exec python3 /home/yassa/.scripts/statusbar/we.py
+interval=7200
+
+[separator]
+[temp]
+command=$ScriptsPath/temperature
+interval=10
+
+[separator]
+[uptime]
+command=$ScriptsPath/sb-uptime
+interval=60
+
+[separator]
+[mic]
+command=$ScriptsPath/sb-mic
+interval=once
+signal=2
+
+[separator]
+[volume]
+command=$ScriptsPath/sb-volume "query"
+interval=once
+signal=2
+
+[separator]
+[brightness]
+command=$ScriptsPath/bright-python.py
+interval=once
+signal=3
+
+[separator]
+[vnstat]
+command=$ScriptsPath/net-usage.py
+interval=5
+
+[separator]
+[diskusage]
+command=$ScriptsPath/disk-v2.py
+interval=60
+
+[separator]
+[memory]
+command=$ScriptsPath/sb-memory
+interval=5
+
+[separator]
+[time]
+command=$ScriptsPath/time.py
+interval=1
+
+[separator]
+[battery]
+command=$ScriptsPath/sb-battery
+interval=3
+
+[separator]
+[language]
+command=$ScriptsPath/sb-langprint
+interval=once
+signal=1
+[separator]
