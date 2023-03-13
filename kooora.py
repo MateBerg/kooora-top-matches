@@ -1,3 +1,5 @@
+# GPL-3.0 license | Yassa Seifen
+
 import requests
 import time 
 import subprocess
@@ -58,8 +60,8 @@ else:
 
 
 
-	    # Print the 4th, 10th, 14th, and 15th elements of each array
-		#print(line_array[7], '(',line_array[14],"-",line_array[15],')', line_array[10])  
+	 
+	#print(line_array[7], '(',line_array[14],"-",line_array[15],')', line_array[10])  
 	output_string = '\n'.join([','.join(line) for line in output_list])
 	# print(output_list)
 
