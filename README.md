@@ -34,6 +34,9 @@ i3blocks config to add this:
 command=echo " ⚽ "; i3-msg exec python3 /home/yassa/.scripts/statusbar/kooora.py
 interval=once
 ```
+Of course, You can make it appears to you in time periods you determine,
+change `once` in `interval=once` to number of seconds you want the script to refresh and appears to you 
+
 So when I press on that soccer emoji, displays the notification.
 
 <img src="https://user-images.githubusercontent.com/69548206/224584524-0dcb57d6-6b47-4a2c-b9f9-207fbb26d8fa.png" height="200">
